@@ -1,0 +1,26 @@
+{
+  "name": "proof-to-vote",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Ganache and Truffle university voting system with KYC, voter NFT and audit trail",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "bundle": "browserify src/js/app.js -o src/dist/app.bundle.js && browserify src/js/admin.js -o src/dist/admin.bundle.js && browserify src/js/dashboard.js -o src/dist/dashboard.bundle.js",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset",
+    "test": "truffle test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/contract": "^4.6.31",
+    "browserify": "^17.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "web3": "^1.10.4"
+  },
+  "devDependencies": {
+    "truffle": "^5.11.5"
+  }
+}

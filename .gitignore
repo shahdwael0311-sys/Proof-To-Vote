@@ -1,0 +1,23 @@
+# Secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proof-To-Vote | University Elections</title><link rel="stylesheet" href="/css/site.css"></head>
+<body><header class="nav"><a class="brand" href="/"><span class="brand-mark">✓</span><span>PROOF-<b>TO</b>-VOTE<small>STUDENT UNION PORTAL</small></span></a>
+<nav><a class="button ghost" href="/login">Login</a><a class="button" href="/register">Register</a></nav></header>
+<main class="hero"><section><span class="eyebrow">● BLOCKCHAIN VERIFIED</span><h1>Your Campus,<br><em>Your Voice.</em></h1>
+<p class="lead">A secure university election system where approved students receive a unique, non-transferable voter NFT. Smart contracts enforce one vote per wallet and publish transparent results without allowing anyone to alter a ballot.</p>
+<div class="hero-actions"><a class="button large" href="/dashboard">Open live dashboard</a></div>
+<div class="mini-stats"><strong id="registered">—</strong><span>students registered</span><strong>1 NFT</strong><span>per approved voter</span></div></section>
+<aside class="hero-card"><div class="chain-art"><span>PROOF-TO-VOTE</span><small>Securing university democracy</small></div></aside></main>
+<section class="steps"><article><b>01</b><h2>Register & verify</h2><p>Submit your student identity and Ganache wallet. An admin reviews KYC.</p></article><article><b>02</b><h2>Receive voter NFT</h2><p>The admin wallet mints a non-transferable identity token to your approved wallet.</p></article><article><b>03</b><h2>Vote & verify</h2><p>Vote once during the election window and receive an on-chain transaction proof.</p></article></section>
+<script>const registeredCount=document.getElementById('registered');fetch('http://127.0.0.1:8000/stats').then(r=>r.json()).then(s=>registeredCount.textContent=s.registered??0).catch(()=>registeredCount.textContent='0');</script></body></html>
